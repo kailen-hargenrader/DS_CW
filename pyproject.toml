@@ -1,20 +1,15 @@
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "your-project-name"
+name = "distributed_primality"
 version = "0.1.0"
-description = "your-project-description"
+description = "A distributed system for primality testing."
 readme = "README.md"
 requires-python = ">=3.9"
-authors = [{name = "your-name", email = "your-email"}]
+authors = [{name = "kailen", email = "khargenr@caltech.edu"}]
 
 dependencies = [
     "numpy",
-    "torch",
-    "matplotlib",
-    "wandb",
+    "grpcio",
+    "primality",
 ]
 
 [project.optional-dependencies]
